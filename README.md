@@ -2,6 +2,14 @@
 
 ## Iniciando Codigo de front-end
 
+### Cores base da logo 
+#### Ref azul : #1B1464
+#### Ref verde: #00EA3D
+
+### Cores base do site
+#### Ref Azul: #0575E6
+#### Ref Verde: #00F260 
+
 <img src="assets\img\Login.png" alt=""></img>
 página de login 
 
