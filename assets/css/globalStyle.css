@@ -1,3 +1,16 @@
+/* Pafrão de cores e fontes com variaveis */
+:root{
+    --white:      #f3efef;
+    --gray:       #beb9b9;
+    --green:      #00cf30;
+    --blue:       #0575E6;
+    --dark_green: #217373;
+    --dark_gray:  #3D3D3D;
+    --dark_cian:  #173540;
+    --dark_blue:  #161F30;
+    --primalFont: 'Montserrat', sans-serif;
+}
+
 /* reseta margin e padding de toda a página */
 *{
     margin: 0;
