@@ -1,7 +1,7 @@
 /* Projeto base navbar */
 /* https://github.com/tigercodes-io/navbar */
 a {
-  color: #3B3B3B !important;
+  color: white !important;
   text-decoration: none !important;
   transition: 0.3s;
 }
@@ -26,7 +26,7 @@ a:hover {
 #linkTopo {
   text-decoration: none;
   color: #fff;
-  background-color: #3B3B3B;
+  background-color: #00EA3D;
   padding: 10px;
   position: fixed;
   right: 10px;
@@ -39,7 +39,6 @@ a:hover {
   justify-content: space-around;
   align-items: inherit;
   font-family: 'Poppins', sans-serif;
-  background: #E0E0E0;
   height: 8vh;
   margin-left: -15vh;
 }
@@ -49,7 +48,9 @@ nav {
   display: flex;
   height: 80px;
   /* width: 100%; */
-  background-color: #E0E0E0;
+  background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   align-items: center;
   justify-content: space-around;
   padding: 0 50px 0 100px;
