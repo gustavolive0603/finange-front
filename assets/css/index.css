@@ -1,4 +1,4 @@
-main{
+body{
     height: 100vh;
     background: var(--green);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, var(--blue), var(--green));  
@@ -6,4 +6,105 @@ main{
     background: linear-gradient(to right, var(--blue), var(--green));  
     background: linear-gradient(to right, var(--blue), var(--green));  
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+}
+
+* {
+    font-family: var(--primalFont);
+}
+
+main {
+    padding: 30px 168px
+}
+
+main .welcome-title {
+    font-size: 40px;
+    font-family: var(--primalFont);
+    color: var(--white);
+}
+
+main .cards-list {
+    display: flex;
+    padding: 80px 0 30px;
+    border-bottom: 1px solid var(--white);
+}
+
+main .cards:first-child {
+    margin-left: 0;
+}
+
+main .cards {
+    color: var(--white);
+    max-width: 220px;
+    min-width: 200px;
+    margin: 0px 10px;
+    padding: 2px 5px;
+    display: grid;
+    grid-template-columns: 2fr 50px;
+    grid-template-rows: 30px 18px;
+    grid-template-areas:
+    "value icon"
+    "legend icon"
+    ;
+    align-items: center;
+}
+
+.spent{
+    background-color: red;
+}
+
+.current {
+    background-color: var(--white);
+}
+
+.current p, .current i{
+    color: var(--black);
+}
+
+.entry {
+    background-color: var(--green);
+}
+
+.cards .value {
+    grid-area: value;
+}
+
+.cards .legend {
+    grid-area: legend;
+}
+
+.cards .icon {
+    grid-area: icon;
+}
+
+.cards .value p {
+    font-size: 16pt;
+}
+.cards .legend p {
+    line-height: 15px;
+}
+.cards .icon {
+    justify-content: flex-end;
+    display: flex;
+    margin: 0 10px 0 0;
+    align-items: center;
+    font-size: 24pt;
+}
+
+@media (max-width: 999px) {
+    main {
+        padding: 100px 30px;
+    }
+
+    main .cards-list {
+        flex-direction: column;
+        padding: 50px 0 30px !important;
+    }
+
+    main .cards {
+        margin: 10px;
+    }
+
+    main .cards:first-child {
+        margin: 10px;
+    }
 }
