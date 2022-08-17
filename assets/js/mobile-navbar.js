@@ -13,7 +13,7 @@ function menuShow() {
 function createNavBar(){
     const nav = document.createElement('header');
     nav.innerHTML = `
-    <nav>
+        <nav>
             <div class="ajustaLogo">
                 <!-- Colocar a logo aqui -->
                 <img src="../assets/img/logo.png" alt="Logo" class="logoImg">

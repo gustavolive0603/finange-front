@@ -1,7 +1,17 @@
 * {
 	font-family: var(--primalFont);
 }
-
+/* Gradiente do fundo da página de login */
+body{
+	height: 100vh;
+    background: var(--green);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--blue), var(--green));  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--blue), var(--green));  
+    background: linear-gradient(to right, var(--blue), var(--green));  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+}
+/* x Gradiente do fundo da página de login x */
 a {
 	text-decoration: none;
 }
