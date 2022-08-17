@@ -15,7 +15,6 @@ class FooterCustom extends HTMLElement {
                       <h4>Sobre Nós</h4>
                       <ul>
                           <li><a href="">Quem somos</a></li>
-                          <li><a href="">Github</a></li>
                       </ul>
                   </div>
                   <!-- end footer-col -->
@@ -23,8 +22,9 @@ class FooterCustom extends HTMLElement {
                   <div class="footer-col">
                       <h4>Obter Ajuda</h4>
                       <ul>
-                          <li><a href="">Bot</a></li>
-                          <li><a href="">Telegram</a></li>
+                          <li><a href="LinkProBot">Bot</a></li>
+                          <li><a href="https://t.me/+cFJ8upuJ5GQzZmE5">Telegram</a></li>
+                          <li><a href="https://github.com/Finange" target="blank">Github</a></li>
                       </ul>
                   </div>
                   <!-- end footer-col -->
