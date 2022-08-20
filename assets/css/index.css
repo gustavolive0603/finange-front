@@ -13,6 +13,7 @@ body{
 }
 
 main {
+    height: 110vh;
     padding: 30px 168px
 }
 
@@ -90,9 +91,22 @@ main .cards {
     font-size: 24pt;
 }
 
+main section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#chart1 {
+    background: whitesmoke;
+    border-radius: 15px;
+}
+
 @media (max-width: 999px) {
     main {
-        padding: 100px 30px;
+        padding: 100px 30px 60px;
+        height: auto;
     }
 
     main .cards-list {
@@ -106,5 +120,15 @@ main .cards {
 
     main .cards:first-child {
         margin: 10px;
+    }
+
+    main section {
+        padding: 0;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    main section canvas {
+        margin-top: 30px;
     }
 }
