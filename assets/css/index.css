@@ -13,7 +13,7 @@ body{
 }
 
 main {
-    height: 110vh;
+    height: 120vh;
     padding: 30px 168px
 }
 
@@ -96,11 +96,14 @@ main section {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 50px;
+    
 }
+
 
 #chart1 {
     background: whitesmoke;
     border-radius: 15px;
+    
 }
 
 @media (max-width: 999px) {
