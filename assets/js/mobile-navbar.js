@@ -11,6 +11,7 @@ function menuShow() {
 }
 
 /* Função que renderiza a navBar */
+<<<<<<< HEAD
 const createHeader = () => {
     const paths = [
         {
@@ -82,6 +83,39 @@ const createHeader = () => {
 
     //Adiciona a navbar na pagina
     document.querySelector('header').append(nav);
+=======
+function createNavBar(){
+    const nav = document.createElement('header');
+    nav.innerHTML = `
+        <nav>
+            <div class="ajustaLogo">
+                <!-- Colocar a logo aqui -->
+                <img src="../assets/img/logo.png" alt="Logo" class="logoImg">
+                <a class="logo" href="#">Finange</a>
+            </div>
+            <!-- Menu Responsivo -->
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+            <!-- x Menu Responsivo x -->
+            <ul class="nav-list">
+                <!--  Links para proximas pag  -->
+                <!-- Class="active" mostra qual pág está selecionada -->
+                <li ><a id="opt1" href="../pages/index.html" onclick="openPage()" >Inicio</a></li>
+                <li ><a id="opt2" href="../pages/dashboard.html"onclick="openPage()" class="active">Dashboard</a></li>
+                <li>
+                    <div class="login-btn">
+                        <a href="/pages/login.html">
+                            <span>Login</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    `;
+    //Injeta a nav no <body>
+    document.body.prepend(nav);
+>>>>>>> f2891e9 (update de testes)
 }
 
 //Quando a pagina estiver carregada a nav irá aparecer
