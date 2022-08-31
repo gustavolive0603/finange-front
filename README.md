@@ -13,4 +13,4 @@
 <img src="assets\img\Login.png" alt="Página de Login"></img>
 
 Projeto open source para gerenciamento financeiro através de um [bot](https://github.com/Finange/finange-bot) para o telegram com uma 
-interface gráfica que funciona simutaniamente em site
+interface gráfica que funciona simultaneamente em site
