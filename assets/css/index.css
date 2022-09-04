@@ -1,10 +1,17 @@
-body{
+body {
+    background: rgb(0, 17, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 17, 36, 1) 3%,
+        rgba(3, 11, 40, 1) 29%,
+        rgba(9, 121, 84, 1) 72%
+    );
     height: 100vh;
-    background: var(--green);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, var(--blue), var(--green));  
+    /* background: var(--green);  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, var(--blue), var(--green));   */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, var(--blue), var(--green));  
-    background: linear-gradient(to right, var(--blue), var(--green));  
+    /* background: linear-gradient(to right, var(--blue), var(--green));  
+    background: linear-gradient(to right, var(--blue), var(--green));   */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
 }
 
@@ -14,7 +21,7 @@ body{
 
 main {
     height: 120vh;
-    padding: 30px 168px
+    padding: 30px 168px;
 }
 
 main .welcome-title {
@@ -43,26 +50,31 @@ main .cards {
     grid-template-columns: 2fr 50px;
     grid-template-rows: 30px 18px;
     grid-template-areas:
-    "value icon"
-    "legend icon"
-    ;
+        "value icon"
+        "legend icon";
     align-items: center;
 }
 
-.spent{
+.spent {
+    border: 1px solid #2d3436;
     background-color: red;
 }
 
 .current {
+    border: 1px solid #2d3436;
     background-color: var(--white);
 }
 
-.current p, .current i{
+.current p,
+.current i {
     color: var(--black);
 }
 
 .entry {
-    background-color: var(--green);
+    background: #07743a;
+    color: #2d3436;
+    /* border: 1px solid #2d3436; */
+    /* background-color: var(--green); */
 }
 
 .cards .value {
@@ -96,14 +108,11 @@ main section {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 50px;
-    
 }
-
 
 #chart1 {
     background: whitesmoke;
     border-radius: 15px;
-    
 }
 
 @media (max-width: 999px) {
