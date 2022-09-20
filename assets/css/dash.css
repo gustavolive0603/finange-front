@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #181d29;
+    background-color: var(--dark_blue);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -19,20 +19,21 @@ main{
 h2{
     font-size: clamp(.8em, 1em + 3vw, 1.5em);
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: var(--white);
     margin: 0;
 }
 
 p{
     font-size: clamp(.8em, 1em + 3vw, 1em);
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: var(--white);
     margin: 0;
 }
 
 .mini-blocos-horizontal i{
     font-size: clamp(.8em, 1em + 3vw, 4em);
-    color: rgba(255, 255, 255, 0.46);
+    color: var(--white);
+    /* opacity: 0.46; */
     object-fit: cover;
     right: 0%;
     margin-left: 1rem;
@@ -62,25 +63,28 @@ ul{
 }
 
 .nav-item {
-    color: white;
+    color: var(--white);
 }
 
 .navbar-toggler{
-    background-color: rgba(255, 255, 255, 0.257);
+    background-color: var(--white);
+    /* opacity: 0.257; */
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: var(--black);
+    /* opacity: 0.567; */
     filter: blur(80deg);
     width: 98%;
     border-radius: 0 0 8px 8px;
 }
 
 .header{
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: var(--black);
+    /* opacity: 0.567; */
     filter: blur(80deg);
     display: flex;
     align-items: center;
@@ -94,7 +98,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-family: 'Open Sans', sans-serif;
     margin-right: 2rem;
 }
@@ -111,7 +115,8 @@ a{
     width: 100%;
     height: 88vh;
     max-width: 200px;
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: var(--black);
+    /* opacity: 0.567; */
     filter: blur(45deg);
     margin: 1rem;
     border-radius: .5rem;
@@ -120,7 +125,7 @@ a{
 .bg-menu{
     width: 90%;
     height: 65vh;
-    background-color: #181d29;
+    background-color: var(--dark_blue);
     border-radius: .5rem;
 }
 
@@ -128,25 +133,24 @@ a{
     width: 60px;
     border-radius: 50%;
     padding: .2rem;
-    background-image: linear-gradient(-90deg, #00cf30, #0575E6);
+    background-image: linear-gradient(-90deg, var(--green), var(--blue));
 }
 .user{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0rem 0;
     height: 90px;
     margin: .5rem .5rem 2rem .5rem;
     border-radius: .5rem;
-    background-image: linear-gradient(45deg, #282828, #7c7c7c);
+    background-image: linear-gradient(45deg, var(--dark_gray), var(--gray));
 }
 
 .menu-vertical a:hover{
-    background-image: linear-gradient(-90deg, #00cf30, #0575E6);
+    background-image: linear-gradient(-90deg, var(--green), var(--blue));
     border-radius: 8px;
     width: 100%;
-    color: white;
+    color: var(--white);
 }
 
 .menu-vertical a{
@@ -154,7 +158,7 @@ a{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     width: 100%;
@@ -164,7 +168,7 @@ a{
 .change-user{
     width: 180px;
     height: 50px;
-    background-color: #181d29;
+    background-color: var(--dark_blue);
     border-radius: .5rem;
     display: flex;
     justify-content: center;
@@ -187,7 +191,8 @@ a{
 }
 
 .mini-blocos-horizontal{
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: var(--black);
+    /* opacity: 0.567; */
     filter: blur(80deg);
     display: flex;
     justify-content: space-around;
@@ -202,6 +207,7 @@ a{
 }
 
 .bloco-1{
+    /* background-image: linear-gradient(45deg, var(--dark_red), var(--red)); */
     background-image: linear-gradient(45deg, rgb(84,1,5), rgb(210, 5, 15));
     width: 100%;
     min-width: 150px;
@@ -215,6 +221,7 @@ a{
 
 .bloco-2{
     margin-left: 1rem;
+    /* background-image: linear-gradient(45deg, var(--gray), var(--white)); */
     background-image: linear-gradient(45deg, rgb(114,114,112), rgb(239, 234, 232));
     width: 100%;
     min-width: 150px;
@@ -228,6 +235,7 @@ a{
 
 .bloco-3{
     margin-left: 1rem;
+    /* background-image: linear-gradient(45deg, var(--dark_green), var(--green)); */
     background-image: linear-gradient(45deg, rgb(14, 63, 10), rgb(19, 173, 16));
     width: 100%;
     min-width: 150px;
@@ -241,6 +249,7 @@ a{
 
 .bloco-4{
     margin-left: 1rem;
+    /* background-image: linear-gradient(45deg, var(--dark_blue), var(--blue)); */
     background-image: linear-gradient(45deg, rgb(3,23,84), rgb(19,62,199));
     width: 100%;
     min-width: 150px;
@@ -256,7 +265,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: var(--black);
+    /* opacity: 0.567; */
     filter: blur(80deg);
     width: 100%;
     min-width: 350px;
@@ -286,7 +296,8 @@ a{
 }
 
 .big-blocos-01{
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: var(--black);
+    /* opacity: 0.567; */
     filter: blur(80deg);
     height: 35vh;
     width: 100%;
@@ -305,7 +316,8 @@ a{
 }
 
 .big-blocos-02{
-    background-color: rgba(0, 0, 0, 0.567);
+    background-color: var(--black);
+    /* opacity: 0.567; */
     filter: blur(80deg);
     height: 32vh;
     width: 100%;
@@ -345,11 +357,11 @@ a{
     }
 
     .nav-item a {
-        color: white;
+        color: var(--white);
     }
 
     .nav-item a:hover{
-        background-image: linear-gradient(-90deg, #00cf30, #0575E6);
+        background-image: linear-gradient(-90deg, var(--green), var(--blue));
         border-radius: 8px;
         width: 100%;
     }
@@ -439,7 +451,8 @@ a{
     i{
         
         font-size: 1.5rem;
-        color: rgba(255, 255, 255, 0.46);
+        color: var(--white);
+        /* opacity: 0.46; */
         object-fit: cover;
         right: 0%;
         margin-left: 1rem;
@@ -457,14 +470,14 @@ a{
     }
 
     .nav-item a {
-        color: white;
+        color: var(--white);
     }
 
     .nav-item a:hover{
-        background-image: linear-gradient(-90deg, #00cf30, #0575E6);
+        background-image: linear-gradient(-90deg, var(--green), var(--blue));
         border-radius: 8px;
         width: 100%;
-        color: white;
+        color: var(--white);
     }
 
     .mini-blocos-horizontal{
@@ -502,7 +515,8 @@ a{
     
     i{
         font-size: 1rem;
-        color: rgba(255, 255, 255, 0.46);
+        color: var(--white);
+        /* opacity: 0.46; */
         object-fit: cover;
         right: 0%;
         margin-left: 1rem;
