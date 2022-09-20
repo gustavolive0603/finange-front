@@ -12,6 +12,7 @@
 
 
 Projeto open source para gerenciamento financeiro através de um [bot](https://github.com/Finange/finange-bot) para o telegram com uma 
+
 interface gráfica que funciona simutaniamente em site
 
 > Pagina de login
@@ -30,3 +31,4 @@ interface gráfica que funciona simutaniamente em site
 
 ![preview](./assets/img/iPhone%20SE.png)
 
+interface gráfica que funciona simultaneamente em site

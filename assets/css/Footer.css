@@ -164,6 +164,11 @@ footer {
     #button{
         width: 80vw;
     }
+
+    .row-footer {
+        justify-content: flex-start;
+    }
+    
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
