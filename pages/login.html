@@ -5,72 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../assets/css/login.css">
-    <link rel="stylesheet" href="../assets/css/globalStyle.css">
+	<link rel="stylesheet" href="../assets/css/login.css">
+	<link rel="stylesheet" href="efeitos.css">
     <!-- x Stylesheet x -->
     <!-- scripts -->
     <script defer src="../assets/js/login.js"></script>
     <!-- x scripts x -->
     <!-- Kit icones -->
-	<script src="https://kit.fontawesome.com/b928a7d4f5.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/a00a82a1cd.js" crossorigin="anonymous"></script>
 	 <!--x Kit icones x-->
 	 <!-- Favicon -->
 	 <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/Favicon/apple-touch-icon.png">
 	 <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/Favicon/favicon-32x32.png">
 	 <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/Favicon/favicon-16x16.png">
 	 <link rel="manifest" href="../assets/img/Favicon/site.webmanifest">
+	 <link rel="shortcut icon" href="../assets/img/Favicon/favicon.ico" type="image/x-icon">
 	 <!-- x Favicon x -->
-	<title>Login</title>
-</head>
-<body>
-	<aside class="sign_up">
-			<div class="auth_option">
-				<ul>
-					<li>
-						<!-- Rota para fazer o login atraves do telegram -->
-						<a href="#">
-							<div>
-								<p>Continue com Telegram</p>
+	 <title>Finange | Login</title>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<section class="promocional">
+					<div class="promo">
+	
+					</div>
+				</section>
+				<section class="card-input">
+					<div class="logo">
+						<img src="../assets/img/logo3.png" alt="Logo">
+					</div>
+	
+					<!--x rota de login x-->
+					<div class="input">
+						<div class="img-input">
+							<!-- Adcionar rota de cadastro -->
+							<form action="#" method="post">
+								<!-- Adcionar rota de cadastro -->
+								<i class="fa-solid fa-user"></i>
+								<input type="email" name="mail" id="mail" placeholder="USUARIO" required>
+								<hr>
+						</div>
+						<div class="img-input">
+							<i class="fa-solid fa-lock"></i>
+							<input type="password" name="senha" id="senha" placeholder="SENHA" required>
+							<hr>
+						</div>
+						<!--x rota de login x-->
+	
+	
+						<div class="btn">
+							<div class="check">
+								<input type="checkbox" name="check" id="check">
+								<div class="check-text">
+									<p>Manter logado</p>
+									<a href="#">Esqueceu a senha?</a>
+								</div>
 							</div>
-						</a>
-						<!--x Rota para fazer o login atraves do telegram x-->
-					</li>
-				</ul>
-			</div>
-			<p>Ou use</p>
-			<!-- Adcionar rota de cadastro -->
-			<form method="POST" action="#">
-			<!--x Adicionar rota de cadastro x-->
-				<input type="text" name="email" placeholder="Email / Telefone">
-				<input type="password" name="password" placeholder="Senha">
-				<button type="submit">Login</button>
-			</form>
-	</aside>
-
-	<aside class="log_in">
-			<div class="auth_option">
-				<ul>
-					<li>
-						<!-- Rota para fazer o login atraves do telegram -->
-						<a href="#">
-							<div>
-								<p>Continue com Telegram</p>
+							<div class="botão">
+								<input type="submit" value="Entrar">
+								</form>
 							</div>
-						</a>
-						<!--x Rota para fazer o login atraves do telegram x-->
-					</li>
-				</ul>
-			</div>
-			<p>Ou use</p>	
-			<!-- Adicionar rota de login -->
-			<form method="POST" action="#">
-			<!--x Adicionar rota de login x-->
-				<input type="text" name="email" placeholder="Email">
-				<input type="password" name="password" placeholder="Senha">
-				<button type="submit">Log in</button>
-			</form>		
+						</div>
+						<div class="row">
+							<hr>
+							<p>Ou</p>
+							<hr>
+						</div>
+						<p>Acesse com</p>
+	
+						<!-- Rota para fazer o login atraves do telegram -->
+						<div class="redes">
+							<div>
 
-			<p>Não possui uma conta? <a href="#">Crie uma</a></p>	
-	</aside>
-</body>
-</html>
+								<button class="telegram">
+									<a href="../pages/dashboard.html"><img src="../assets/img/telegram.svg" alt="" id="telegram"></a>
+
+								<button class="tl-button">
+									<div class="icon">
+										<svg viewBox="0 0 16 16" class="bi bi-telegram" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
+										</svg>
+									</div>
+									<p>Telegram</p>
+
+								</button>
+								<!-- <button class="telegram">
+									<img src="../assets/img/telegram.svg" alt="" id="telegram">
+								</button> -->
+							</div>
+						</div>
+						<!-- Rota para fazer o login atraves do telegram -->
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+	
+	</html>

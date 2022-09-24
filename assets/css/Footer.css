@@ -4,7 +4,7 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box ;
-    background-color: #161F30;
+    background-color: var(--dark_blue);
     padding: 50px 0;
 }
 
@@ -27,7 +27,7 @@ footer {
 
 .footer-col h4{
     font-size: 22px;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 20px;
     font-weight: 500;
     position: relative;
@@ -45,7 +45,7 @@ footer {
 .footer-col ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
     font-weight: 300;
     display: block;
@@ -63,13 +63,13 @@ footer {
     padding: 10px;
     font-size: 15px;
     outline: none;
-    border: 1px solid white;
-    color: white;
-    background-color: #B1B2AD;
+    border: 1px solid var(--white);
+    color: var(--white);
+    background-color: var(--gray);
 }
 
 .footer-col .form-sub input::placeholder{
-    color: black;
+    color: var(--black);
 }
 
 .footer-col .form-sub button{
@@ -80,10 +80,10 @@ footer {
     outline: none;
     border: none;
     cursor: pointer;
-    color: #B1B2AD;
+    color: var(--gray);
     border-radius: 3px;
     font-weight: bold;
-    background-color: white;        
+    background-color: var(--white);        
 }
 
 
@@ -103,7 +103,7 @@ footer {
 }
 
 .form label {
-    color: #fff;
+    color: var(--white);
     line-height: 1;
     margin-bottom: 0.5rem;
 }
@@ -135,7 +135,7 @@ footer {
 .form button {
     display: block;
     background: var(--dark_blue);
-    color: #fff;
+    color: var(--white);
     font: inherit;
     text-transform: uppercase;
     border: none;
@@ -164,6 +164,11 @@ footer {
     #button{
         width: 80vw;
     }
+
+    .row-footer {
+        justify-content: flex-start;
+    }
+    
     .footer-col{
         width: 50%;
         margin-bottom: 30px;
