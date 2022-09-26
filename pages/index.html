@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,6 +67,9 @@
                 </div>
                 <div class="icon">
                     <i class="fa-solid fa-arrow-up"></i>
+                <div id="google_translate_element">
+                    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                    </script>  
                 </div>
             </div>
         </div>
@@ -75,6 +78,16 @@
             <canvas id="chart1" height="450px" width="500px"></canvas>
             <canvas id="chart2" height="330px" width="300px"></canvas>
         </section>
+
+        <script> function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                 pageLanguage: 'pt-BR'
+                },
+                'google_translate_element'
+              );
+          } </script>
+
     </main>
     <!-- x Corpo da Página  x -->
     
